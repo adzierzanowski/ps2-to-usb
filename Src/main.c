@@ -21,7 +21,6 @@
 #include "main.h"
 #include "dma.h"
 #include "i2c.h"
-#include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -106,7 +105,6 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USB_DEVICE_Init();
-  MX_USART1_UART_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 
@@ -158,8 +156,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB|RCC_PERIPHCLK_USART1;
-  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
 
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
