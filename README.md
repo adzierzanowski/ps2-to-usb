@@ -31,5 +31,5 @@ repository so you'll have to regenerate the project by yourself. Just open
 I use STM32F072C8 for this project but any STM32 with an USB peripheral will
 suffice (some pin remapping can be needed).
 
-Mind that the Caps Lock key is mapped to ESC because i use Vim. You can change
-that in `keymap.c`.
+Mind that the Caps Lock key is mapped to ESC because i use Vim and Left Alt
+is mapped to Meta because I use macOS. You can change that in `keymap.c`.
