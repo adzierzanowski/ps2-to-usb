@@ -34,6 +34,12 @@ suffice (some pin remapping can be needed).
 Mind that the Caps Lock key is mapped to ESC because i use Vim and Left Alt
 is mapped to Meta because I use macOS. You can change that in `keymap.c`.
 
+Files you should concern when modifying the code:
+* `keyboard.h`
+* `keymap.h`
+* `queue.h`
+* `main.c`
+
 ## Todo
 
 There's not much left to do other than the lock key LEDs are not handled.
