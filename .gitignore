@@ -1,0 +1,7 @@
+build
+Drivers
+Middlewares
+.mxproject
+.vscode
+startup_stm32f072xb.s
+STM32F072C8Tx_FLASH.ld
