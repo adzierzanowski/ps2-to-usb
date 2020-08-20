@@ -5,7 +5,7 @@
 
 #include <stdint.h>
 
-const uint8_t keymap[0x100];
-const uint8_t keymap_prefixed[0x100];
+const uint8_t keymap[KEYMAPSZ];
+const uint8_t keymap_prefixed[KEYMAPSZ];
 
 #endif
